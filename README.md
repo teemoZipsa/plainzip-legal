@@ -1,9 +1,10 @@
 # PlainZip Legal and Support
 
-This public repository hosts legal and support pages for the Microsoft Store distribution of PlainZip.
+This public repository hosts customer-facing legal and support pages for the Microsoft Store distribution of PlainZip.
 
-- [PlainZip Privacy Policy](https://github.com/teemoZipsa/plainzip-legal/blob/main/PRIVACY_POLICY.md)
-- [PlainZip Privacy Policy HTML](https://teemozipsa.github.io/plainzip-legal/privacy.html)
-- [PlainZip Support](https://teemozipsa.github.io/plainzip-legal/support.html)
+- Website: <https://teemozipsa.github.io/plainzip-legal/>
+- Privacy policy: <https://teemozipsa.github.io/plainzip-legal/privacy.html>
+- Support: <https://teemozipsa.github.io/plainzip-legal/support.html>
+- Markdown privacy policy source: <https://github.com/teemoZipsa/plainzip-legal/blob/main/PRIVACY_POLICY.md>
 
-The PlainZip source repository is private; this repository intentionally contains only public customer-facing text.
+The PlainZip source repository is private. This repository intentionally contains only public Store metadata pages and policy text.

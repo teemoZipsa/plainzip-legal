@@ -4,27 +4,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PlainZip Support</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; color: #1f2933; background: #f7f8fa; }
-    main { max-width: 820px; margin: 0 auto; padding: 48px 24px 72px; background: #fff; min-height: 100vh; }
-    h1 { margin-top: 0; font-size: 2.25rem; line-height: 1.15; }
-    h2 { margin-top: 2rem; font-size: 1.25rem; }
-    p { margin: 0.75rem 0; }
-    a { color: #075db3; }
-    @media (prefers-color-scheme: dark) { body { color: #e8edf2; background: #101418; } main { background: #151b21; } a { color: #8ac4ff; } }
-  </style>
+  <meta name="description" content="Support information for PlainZip on Microsoft Store.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>PlainZip Support</h1>
-    <p>PlainZip is a local Windows archive utility distributed through the Microsoft Store.</p>
-    <h2>Installation and updates</h2>
-    <p>Install and update PlainZip from the Microsoft Store listing.</p>
-    <p><a href="https://apps.microsoft.com/detail/9PN1JKCFFKLM">Open PlainZip in Microsoft Store</a></p>
-    <h2>Privacy</h2>
-    <p>PlainZip processes archives locally and does not include ads, telemetry, analytics, accounts, or cloud sync.</p>
-    <p><a href="privacy.html">Read the PlainZip Privacy Policy</a></p>
-  </main>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">PZ</span>
+          <span>PlainZip</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Overview</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html" aria-current="page">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Support</p>
+        <h1>Help for PlainZip users.</h1>
+        <p class="lede">
+          PlainZip is distributed through Microsoft Store and runs archive preview,
+          extraction, and creation locally on your Windows device.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.microsoft.com/detail/9PN1JKCFFKLM">Open Microsoft Store listing</a>
+          <a class="button" href="privacy.html">Privacy policy</a>
+        </div>
+      </section>
+
+      <section class="content">
+        <article class="document">
+          <h2>Install And Update</h2>
+          <p>Install PlainZip and receive updates from the Microsoft Store product page.</p>
+          <ul>
+            <li>Use the Store listing to install the latest available version.</li>
+            <li>If an update is not visible yet, check again after the Store finishes rollout for your device and region.</li>
+            <li>PlainZip does not require a separate 7-Zip installation.</li>
+          </ul>
+
+          <h2>Common Questions</h2>
+          <div class="grid" aria-label="Common PlainZip support topics">
+            <section class="card">
+              <h3>Where are my files processed?</h3>
+              <p>Archive operations run locally. PlainZip does not upload your archive contents.</p>
+            </section>
+            <section class="card">
+              <h3>Why was an archive skipped?</h3>
+              <p>Password-required or high-risk archives may need review before extraction.</p>
+            </section>
+            <section class="card">
+              <h3>Can I check privacy details?</h3>
+              <p>The privacy policy explains file access, local settings, logs, and password handling.</p>
+            </section>
+          </div>
+
+          <h2>Troubleshooting</h2>
+          <ul>
+            <li>If an archive does not open, confirm the file exists locally and is not still downloading.</li>
+            <li>If extraction fails, try the archive integrity test before extracting again.</li>
+            <li>If an encrypted archive asks for a password, PlainZip uses the password only for the active operation.</li>
+            <li>If a Store update appears delayed, open the Microsoft Store library and check for app updates.</li>
+          </ul>
+
+          <h2>Contact Path</h2>
+          <p>For product support, use the support or contact option available from the PlainZip Microsoft Store listing.</p>
+          <p>This page is provided as the public support URL for Microsoft Store metadata.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><a href="privacy.html">Privacy policy</a> · <a href="index.html">PlainZip legal and support home</a></p>
+    </footer>
+  </div>
 </body>
 </html>
