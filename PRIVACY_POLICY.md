@@ -1,6 +1,6 @@
 # PlainZip Privacy Policy
 
-Last updated: 2026-07-09
+Last updated: 2026-07-19
 
 PlainZip is a local Windows archive utility. It previews, extracts, and creates archive files on your device.
 
@@ -12,9 +12,9 @@ PlainZip may process archive passwords that you enter for encrypted archives. Pa
 
 ## Data PlainZip Stores Locally
 
-PlainZip stores app settings locally, such as theme, output-folder preferences, and supported shell-action preferences.
+PlainZip stores app settings locally, such as theme, output-folder preferences, supported shell-action preferences, saved compression profiles, ordered extraction-conflict rules, and—when enabled—up to 100 workflow-history records. A workflow record can include source and output paths, counts, sizes, duration, warning counts, completion status, and non-secret options needed to prepare the same inputs again. It does not include archive passwords, filename-encryption state, or file contents.
 
-Settings are stored next to the executable in portable mode when that location is writable. If that location is not writable, settings are stored under:
+Settings are stored locally under:
 
 ```text
 %LOCALAPPDATA%\PlainZip\settings.json
@@ -27,6 +27,8 @@ When command-line or supported shell-action jobs fail or need user-visible follo
 ```
 
 Logs may include local file paths, archive names, archive entry names, and error messages. PlainZip masks archive passwords in UI and logs.
+
+Users can explicitly export workflow history or one completed workflow as JSON or CSV to a file location they choose. PlainZip does not upload those reports.
 
 ## Data Collection And Transmission
 
@@ -54,9 +56,9 @@ You can remove PlainZip's local settings and logs by deleting:
 %LOCALAPPDATA%\PlainZip\
 ```
 
-If you use portable mode and settings are stored next to the executable, delete the adjacent `settings.json` file.
+Workflow history can also be disabled or cleared directly in PlainZip Settings. Saved JSON and CSV reports remain wherever you chose to save them and must be deleted from that location separately.
 
-The Microsoft Store MSIX build does not declare Explorer context-menu integration in its package manifest.
+PlainZip 0.6.5 can receive paths selected through its packaged Windows 11 Explorer context-menu command. Explorer passes those paths locally to the installed PlainZip app only after you invoke the command. This does not upload or share file paths, file contents, passwords, settings, or logs.
 
 ## Changes
 
