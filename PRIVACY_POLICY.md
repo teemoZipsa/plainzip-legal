@@ -1,6 +1,6 @@
 # PlainZip Privacy Policy
 
-Last updated: 2026-07-19
+Last updated: 2026-07-22
 
 PlainZip is a local Windows archive utility. It previews, extracts, and creates archive files on your device.
 
@@ -12,7 +12,7 @@ PlainZip may process archive passwords that you enter for encrypted archives. Pa
 
 ## Data PlainZip Stores Locally
 
-PlainZip stores app settings locally, such as theme, output-folder preferences, supported shell-action preferences, saved compression profiles, ordered extraction-conflict rules, and—when enabled—up to 100 workflow-history records. A workflow record can include source and output paths, counts, sizes, duration, warning counts, completion status, and non-secret options needed to prepare the same inputs again. It does not include archive passwords, filename-encryption state, or file contents.
+PlainZip stores app settings locally, such as theme, output-folder preferences, supported shell-action preferences, saved compression profiles, ordered extraction-conflict rules, up to 12 Quick Workflows, and—when enabled—up to 100 workflow-history records. A workflow record can include source and output paths, counts, sizes, duration, warning counts, completion status, and non-secret options needed to prepare the same inputs again. A Quick Workflow copies only its source paths and non-secret repeat setup. Neither includes archive passwords, filename-encryption state, or file contents.
 
 Settings are stored locally under:
 
@@ -56,9 +56,9 @@ You can remove PlainZip's local settings and logs by deleting:
 %LOCALAPPDATA%\PlainZip\
 ```
 
-Workflow history can also be disabled or cleared directly in PlainZip Settings. Saved JSON and CSV reports remain wherever you chose to save them and must be deleted from that location separately.
+Workflow history can also be disabled or cleared directly in PlainZip Settings. Quick Workflows remain independent from history and can be removed individually in the Workflow Center. Saved JSON and CSV reports remain wherever you chose to save them and must be deleted from that location separately.
 
-PlainZip 0.6.5 can receive paths selected through its packaged Windows 11 Explorer context-menu command. Explorer passes those paths locally to the installed PlainZip app only after you invoke the command. This does not upload or share file paths, file contents, passwords, settings, or logs.
+PlainZip 0.6.7 can receive paths selected through its packaged Windows 11 Explorer context-menu command. Explorer passes those paths locally to the installed PlainZip app only after you invoke the command. This does not upload or share file paths, file contents, passwords, settings, or logs.
 
 ## Changes
 

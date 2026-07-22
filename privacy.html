@@ -25,7 +25,7 @@
 
     <main>
       <section class="hero">
-        <p class="eyebrow">Last updated: 2026-07-19</p>
+        <p class="eyebrow">Last updated: 2026-07-22</p>
         <h1>PlainZip Privacy Policy</h1>
         <p class="lede">
           PlainZip is a local Windows archive utility. It previews, extracts, and creates
@@ -55,7 +55,7 @@
           <p>PlainZip may process archive passwords that you enter for encrypted archives. Passwords are used only to run the current archive operation.</p>
 
           <h2>Data PlainZip Stores Locally</h2>
-          <p>PlainZip stores app settings locally, such as theme, output-folder preferences, supported shell-action preferences, saved compression profiles, ordered extraction-conflict rules, and—when enabled—up to 100 workflow-history records. A workflow record can include source and output paths, counts, sizes, duration, warning counts, completion status, and non-secret options needed to prepare the same inputs again. It does not include archive passwords, filename-encryption state, or file contents.</p>
+          <p>PlainZip stores app settings locally, such as theme, output-folder preferences, supported shell-action preferences, saved compression profiles, ordered extraction-conflict rules, up to 12 Quick Workflows, and—when enabled—up to 100 workflow-history records. A workflow record can include source and output paths, counts, sizes, duration, warning counts, completion status, and non-secret options needed to prepare the same inputs again. A Quick Workflow copies only its source paths and non-secret repeat setup. Neither includes archive passwords, filename-encryption state, or file contents.</p>
           <p>Settings are stored locally under:</p>
           <pre><code>%LOCALAPPDATA%\PlainZip\settings.json</code></pre>
           <p>When command-line or supported shell-action jobs fail or need user-visible follow-up, PlainZip may write local diagnostic logs under:</p>
@@ -77,8 +77,8 @@
           <h2>User Controls</h2>
           <p>You can remove PlainZip's local settings and logs by deleting:</p>
           <pre><code>%LOCALAPPDATA%\PlainZip\</code></pre>
-          <p>Workflow history can also be disabled or cleared directly in PlainZip Settings. Saved JSON and CSV reports remain wherever you chose to save them and must be deleted from that location separately.</p>
-          <p>PlainZip 0.6.5 can receive paths selected through its packaged Windows 11 Explorer context-menu command. Explorer passes those paths locally to the installed PlainZip app only after you invoke the command. This does not upload or share file paths, file contents, passwords, settings, or logs.</p>
+          <p>Workflow history can also be disabled or cleared directly in PlainZip Settings. Quick Workflows remain independent from history and can be removed individually in the Workflow Center. Saved JSON and CSV reports remain wherever you chose to save them and must be deleted from that location separately.</p>
+          <p>PlainZip 0.6.7 can receive paths selected through its packaged Windows 11 Explorer context-menu command. Explorer passes those paths locally to the installed PlainZip app only after you invoke the command. This does not upload or share file paths, file contents, passwords, settings, or logs.</p>
 
           <h2>Changes</h2>
           <p>This privacy policy should be updated when PlainZip adds features that collect, store, transmit, or share additional data.</p>
